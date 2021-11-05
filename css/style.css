@@ -48,6 +48,13 @@ line-height: 2;
 font-style: bold;
 }
 
+h3 {
+font-size: 1.5em;
+text-align: center;
+line-height: 2;
+font-style: bold;
+}
+
 h5 {
   font-size: 1em;
   text-align: center;
@@ -61,6 +68,7 @@ h5 {
 
 .homepage{
   padding-top: 100px;
+  padding-bottom: 25px;
 }
 
 .img1 {
@@ -81,11 +89,11 @@ h5 {
 }
 
 
-.row {
+/* .row {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
-}
+} */
 
 /* Create two equal columns that sits next to each other */
 .column {
@@ -99,14 +107,19 @@ h5 {
 .column img {
   margin-top: 8px;
   vertical-align: middle;
-  
 }
 
 .text{
+  font-size: small;
   text-align: center;
   padding-right: 30px;
   padding-left: 30px;
   padding-bottom: 10px;
+}
+
+form{
+  text-align: center;
+  padding-bottom: 100px;
 }
 
 @media screen and (min-width: 300px){
@@ -114,7 +127,13 @@ h5 {
   display: flex;
   flex-direction: column;
   width: 100%
+}
 
+.row {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1em;
+  grid-row-gap: 100px;
 }
 
 
